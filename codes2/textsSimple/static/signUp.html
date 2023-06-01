@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Text Sign Up Form</title>
+	<style>
+		body {
+			background-color: purple;
+			text-align: center;
+			color: white;
+			font-size: 50px;
+			margin: auto;
+		}
+
+		#form input {
+			font-size: 50px;
+		}
+
+		#submit {
+			cursor: grab;
+			border-radius: 15px;
+		}
+
+		h1 {
+			font-size: 30px;
+			margin: auto;
+			margin-top: 15px;
+			margin-bottom: 35px;
+			border: white 10px double;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Please sign up for the random fact of the day.</h1>
+	<form id="form" action="/signUp" method="post">
+		<!-- user input-->
+		Name:<br>
+		<input type="text" name="name" placeholder="name" required><br><br>
+		Phone:<br>
+		<input type="phone" name="phone" placeholder="cell number" required><br><br>
+		<!-- submit button -->
+		<input id="submit" type="submit" value="sign up">
+	</form>
+</body>
+
+</html>
